@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The subsites module allows multiple websites to run from a single installation of SilverStripe, and share users, content, and assets between them. A useful way to think of its use is where you have a business with a global headquarters and four branches in various countries. The subsites module allows the five offices to use a single SilverStripe installation, and have information from the headquarters flow down into the branches. The branches can have separate users/admins, and information that is individual. The website templates can also be different.
+The subsites module allows multiple websites to run from a single installation of SilverStripe, and share users, content, and assets between them. A useful way of thinking for its uses is to have a business with a global headquarters and about four branches in various countries. The subsites module allows the five offices (1 headquarters, 4 branches) to use a single SilverStripe installation, and have information from the headquarters flow down into the branches. The branches can have separate users/admins, and information that is individual. The website templates can also be different.
 
 ## Requirements
 
@@ -40,7 +40,7 @@ For SilverStripe versions 2.3.x this forum entry might be useful in getting the 
 
 Download a second theme from http://www.silverstripe.com/themes/ and put it in your themes folder.  Open admin/subsites?flush=1 and select one of your subsites from the menu on the bottom-left.  You should see a Theme dropdown in the subsite details, and it should list both your original theme and the new theme.  Select the new theme in the dropdown.  Now, this subsite will use a different theme from the main site.
 
-### Limit themes for a subsite
+### Limited themes for a subsite
 
 Not all themes might be suitable or adapted for all subsites. You can optionally limit usage of themes:
 
@@ -94,11 +94,11 @@ You can mix the two together, if you want to have some subsites hosted off subdo
 	));
 
 
-Note that every site also has a ''www.''-prefixed version of the domain available.  For example, if your subsite is accessible from ''wellington.example.org'' then it will also be accessible from '''www.wellington.example.org''.
+Note: Every site also has a ''www.''-prefixed version of the domain available.  For example, if your subsite is accessible from ''wellington.example.org'' then it will also be accessible from '''www.wellington.example.org''.
 
 ### Access created domains
 
-Once you have created some subsites/domains in your admin, you can check the overall functionality of subsites by
+Once you have created some subsites/domains in your admin, you can check the overall functionality of subsites using:
 
 	
 	http://your.primary-domain.com/subsite-metadata-url?SubsiteID=1
